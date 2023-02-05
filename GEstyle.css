@@ -1,0 +1,549 @@
+
+/* HTML Starts */
+html {
+	background-color:#F8E0D9;
+	padding: 30px;
+	font-family:serif, 'PT+Serif', serif;
+}
+
+/* HTML Ends */
+/* Body Starts */
+body {
+	background:linear-gradient(#DFBCB1, #eb5428);
+    background-size: cover;
+    background-repeat: no-repeat;
+	width: 1024px;
+	height: 4350px;
+	margin: 0 auto;
+	color: white;
+}
+
+/* Body Ends */
+/* Header Starts */
+header {
+  	background-color: #EE805E;
+  	display:grid;
+  	line-height:2px;
+  	font-size: 45px;
+  	height: 140px;
+  	grid-template-columns:1fr 1fr 1fr;
+  	float: left;
+}
+
+h1 {
+  	grid-column:1/3;
+  	line-height:2px;
+  	margin-top: 90px;
+  	padding-left:10px;
+  	display: inline-block;	
+  	float: left;
+  	font-weight: bold;
+}
+
+/* Header Ends */
+/* Navgation bar Starts */
+#navgation {
+  	grid-column:3/4;
+  	background-color: #ee805e;
+}
+
+nav h2, #footer h2 {
+ 	visibility:hidden;
+  	height:12px;
+}
+
+a, a:hover, a:focus, a:active {
+  	text-decoration: none;
+  	color: inherit;
+}
+
+nav ul {
+  	display:flex;
+  	list-style: none;
+  	margin: 0;
+  	padding-left: 0; 	
+}
+
+#navgation li {
+  	width:90px;
+  	display: block;
+  	padding: 1rem;
+  	position: relative;
+  	text-decoration: none;
+  	transition-duration: 0.5s;
+}
+
+li a {
+  	color: #ffffff;
+}
+
+#navgation li:hover, #navgation li:focus-within {
+  	background-color: #eb5428;
+  	width: 104px;
+}
+
+#navgation li:focus-within a {
+  	outline: none;
+}
+
+nav ul li ul {
+  	background-color:#ee805e;
+  	visibility: hidden;
+  	opacity: 0;
+  	width: 135px;
+  	position: absolute;
+  	margin-top: 1rem;
+  	left: 0;
+  	display: none;
+  	transition: 0.5s ease-in;  
+}
+
+ul li:hover > ul, ul li:focus-within > ul, ul li ul:hover, ul li ul:focus {
+  	visibility: visible;
+ 	opacity: 1;
+  	display: block;
+}
+
+#searchbar {
+	text-align: center;
+}
+
+/* Navgation bar Ends */
+/* Street tacos Starts */
+h2, h3 {
+	text-align: center;
+	padding: 10px;
+}
+
+#street-tacos h2, #side-page h2, #taco-cheesington h2 {
+	font-size: 80px;
+	margin-top: -20px;
+}
+
+#street-tacos, #taco-cheesington {
+	background-color: #B55A3F;
+	margin: 50px;
+	text-align: center;
+}
+
+#street-tacos{
+	height: 2200px;
+	padding: 50px;
+}
+
+#street-tacos h3 {
+	visibility: hidden;
+	height: 0px;
+	margin-top: -40px;
+}
+
+#taco-info, #directions {
+	text-align: justify;
+}
+
+#taco-icons, #taco-cheesington-nav {
+	background-color: #FAE7E1;
+	border-radius: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#taco-icons {
+	padding-left: 70px;
+}
+
+#taco-icons li {
+	background-color: #EE805E;
+	margin: 10px;
+	border-radius: 30px;
+  	padding: 25px;
+  	width: 45px;
+  	height: 55px;
+  	font-size: 14px;
+}
+
+#taco-icons li:hover, #taco-cheesington-nav li:hover {
+	background-color: #eb5428;
+}
+
+#description img, #rice img, #salsa img, #guacamole img, #tortillas img {
+	clip-path: circle(34% at 50% 50%);
+}
+
+#tortillas img {
+	margin-top: -65px;
+}
+
+#description img {
+	margin-top: -120px;
+}
+
+#description div {
+	background-color: #FAE7E1;
+	border-radius: 50px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-top: -120px;
+	height: 135px;
+	padding: 15px;
+}
+
+#one {
+   grid-row-start: 1;
+   grid-column-start: 1;
+
+   grid-row-end: 2;
+   grid-column-end: 2;
+}
+
+#two {
+   grid-row-start: 1;
+   grid-column-start: 2;
+
+   grid-row-end: 2;
+   grid-column-end: 4;
+}
+
+#three {
+   grid-row-start: 1;
+   grid-column-start: 4;
+
+   grid-row-end: 2;
+   grid-column-end: 5;
+}
+
+#four {
+   grid-row-start: 2;
+   grid-column-start: 1;
+
+   grid-row-end: 3;
+   grid-column-end: 3;
+}
+
+#five {
+   grid-row-start: 2;
+   grid-column-start: 3;
+
+   grid-row-end: 3;
+   grid-column-end: 5;
+}
+
+#description p {
+	color: #EE805E;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+#taco-info, #ingredients, #directions {
+	line-height: 40px;
+	padding: 20px;
+	font-size: 18px;
+}
+
+#ingredients ul{
+ 	display: inline-block;
+ 	font-size: 20px;
+ 	margin-top: -20px;
+}
+
+/* Street tacos Ends */
+/* Sides dishes Starts */
+#side-page {
+	background-color: #a25e4a;
+	padding: 0px;
+	height: 1050px;
+	display: grid;
+	grid-template-rows: 300px 300px 300px;
+   	grid-template-columns: 400px 400px; 
+   	grid-gap: 30px;	
+    justify-content: center;
+}
+
+#side-page h2 {
+	grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    height: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#rice {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+}
+
+#salsa {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+
+#guacamole {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+}
+
+#tortillas {
+	grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 3;
+}
+
+#rice, #salsa, #guacamole, #tortillas {
+    position: relative;
+    background-color: #FAE7E1;
+    border-radius: 80px;
+    margin-top: 34px;
+}
+
+#rice img, #salsa img, #guacamole img {
+	display: block;
+	max-height: 300px;
+	max-width: 400px;
+}
+
+#tortillas img {
+	display: block;
+	height: 400px;
+	width: 267px;
+	margin-left: 66.5px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0,0.6);
+	clip-path: circle(34% at 50% 50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	opacity: 0;
+	transition: 0.25s;
+}
+
+.overlay:hover {
+	opacity: 1;
+}
+
+.overlay > * {
+	transform: translateY(20px);
+    transition: transform 0.25s;
+
+}
+
+.overlay:hover > * {
+ transform: translateY(0px);
+}
+
+.overlay h3 {
+	font-size: 30px;
+	margin-top: 50px;
+	width: 200px;
+	color: #eb5428;
+}
+
+/* Sides dishes Ends */
+/* Taco Cheesington Starts */
+#taco-cheesington {
+	height: 400px;
+	padding: 14px;
+}
+
+#taco-cheesington img {
+	clip-path: circle(30% at 50% 50%);
+	margin-top: -115px;
+}
+
+#taco-cheesington-nav {
+	 margin-top: -37px;
+}
+
+#taco-cheesington-nav ul {
+	margin-left: 7px;
+	display: grid;
+	grid-template-rows: 1fr;
+   	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+}
+
+#taco-cheesington-nav li {
+	background-color: #EE805E;
+	margin: 10px;
+	border-radius: 30px;
+  	padding: 25px;
+  	width: 56px;
+  	height: 13px;
+  	font-size: 14px;
+}
+
+/* Taco Cheesington Ends */
+/* soical media starts */
+#soical-media {
+	background-color: #B55A3F;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-top: -50px;
+	text-align: center;
+}
+
+#soical-media h2, #footer h2 {
+	visibility: hidden;
+	height: 0px;
+}
+
+#soical-media h2{
+	margin-top: -63px;	
+}
+
+#soical-media ul {
+	justify-content: center;
+}
+
+#soical-media li {
+	margin-top: -20px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 22px;
+}
+/* soical media ends */
+/* footer starts */
+#footer {
+  	background-color: #EE805E;
+  	font-size: 14px;
+  	height: 114px;
+  	text-align: center;
+  	line-height: 2rem;
+}
+
+#footer h2 {
+	margin-top: 47px;
+}
+
+#footer ul {
+	display: grid;
+	align-items: center;
+  	grid-template-rows: 1fr;
+   	grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* footer ends */
+/* Media Query starts */
+@media only screen and (max-width: 550px){
+  /* Small Screen: */
+
+  	body {
+  		width: 450px;
+  		height: 5200px;
+  		align-content: center;
+  	}
+
+  	header {
+  		display: grid;
+  		float: none;
+  		text-align: center;
+  		font-size: 30px;
+  		grid-template-rows: 1fr;
+   		grid-template-columns: 1fr;
+   		margin-bottom: -85px;
+   		padding-right: 6px;
+  	}
+
+  	#navgation ul {
+  		grid-template-rows: 1fr;
+   		grid-template-columns: 1fr 1fr 1fr;
+   		display: grid;
+   		padding-left: 40px;
+  	}
+
+  	svg {
+  		width: 70%;
+  		height: 70%;
+  	}
+
+  	nav ul li ul {
+  	width: 435px;
+  	}
+
+  	#street-tacos {
+  		height: 2599px;
+  	}
+
+  	#street-tacos h2, #side-page h2, #taco-cheesington h2 {
+  		font-size: 40px;
+  	} 
+
+  	#taco-icons {
+  		display: grid;
+  		grid-template-columns: 1fr 1fr;
+  		padding-left: 10px;
+  	}
+  	#description img {
+		clip-path: circle(20% at 50% 50%);
+		align-items: center;
+		margin-top: -235px;
+		margin-left: -170px;
+	}
+
+	#rice img, #salsa img, #guacamole img {
+		clip-path: circle(37.2% at 50% 50%);
+		margin-top: -247px;
+		margin-left: 26px;
+	}
+
+	#tortillas img {
+		clip-path: circle(45% at 50% 50%);
+		margin-top: -247px;
+		margin-left: 91px;
+		height: 300px;
+	}
+
+   #description div {
+   		display: block;
+   		margin-top: -240px;
+   		padding-bottom: 140px;
+   }
+
+   #taco-info p, #directions p {
+   	line-height: 1.5rem;
+   	font-size: 17px;
+   }
+
+   #side-page {
+   	display: block;
+   	height: 1400px;
+   }
+
+   #side-page div {
+   		padding-top: 250px;  		
+   }
+
+   #taco-cheesington {
+   	height: 570px;
+   }
+
+   #taco-cheesington-nav ul {
+   	grid-template-columns: 1fr 1fr;
+   	grid-template-rows: 1fr 1fr 1fr 1fr;
+   	margin-left: 35px;
+   }
+}
+
+@media (min-width: 1200px) {
+  /* Bigger Screen: */
+ 	html {
+ 		max-width: 1200px;
+ 	}
+}
+/* Media Query ends */
